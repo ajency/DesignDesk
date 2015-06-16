@@ -635,3 +635,14 @@ ul.filter-tabs li:last-child a {
   margin-bottom: 8px;
   width: 65px;
 }
+#hb-page-title.extra-large-padding h2 {
+  font-size: 18px;
+  line-height: 25px;
+  width: 350px;
+}
+.ts-1 .flex-control-nav {
+  bottom: 0;
+}
+.hb-testimonial-box .testimonial-author {
+  top: 0;
+}
