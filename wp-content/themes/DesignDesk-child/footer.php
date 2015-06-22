@@ -94,7 +94,7 @@ if ( basename(get_page_template()) != 'page-presentation-fullwidth.php' ){
 			<div class="col-6">
 				<div class="right_mem">
 					<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/members_of_IFES_and_EDPA.png" alt="" class="member1 pullright">
-					<span class="membersof pullright">We are the<br>members of</span>
+					<span class="membersof pullright">Members of</span>
 					<!-- <img src="" alt="" class="member2 pullright"> -->
 				</div>
 			</div>
