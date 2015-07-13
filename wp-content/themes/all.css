@@ -1523,9 +1523,6 @@ ul.social-icons.light li a {
 .halvedarea .frm_form_field.form-field.fr {
   float: right;
 }
-.with_frm_style .halvedarea .frm_form_field {
-  clear: none !important;
-}
 @media screen and (max-width: 480px) {
   .halvedarea .frm_form_field.form-field.fr,
   .halvedarea .frm_form_field.form-field.fl {
@@ -1534,20 +1531,11 @@ ul.social-icons.light li a {
     width: 100%;
   }
 }
-.frm_style_formidable-style.with_frm_style .frm_hidden,
-.with_frm_style .frm_hidden {
-  display: none;
-}
 .frm_style_formidable-style.with_frm_style input[type=text],
 .frm_style_formidable-style.with_frm_style input[type=number],
 .frm_style_formidable-style.with_frm_style input[type=tel],
 .frm_style_formidable-style.with_frm_style input[type=email],
-.frm_style_formidable-style.with_frm_style textarea,
-.with_frm_style input[type=text],
-.with_frm_style input[type=number],
-.with_frm_style input[type=tel],
-.with_frm_style input[type=email],
-.with_frm_style textarea {
+.frm_style_formidable-style.with_frm_style textarea {
   padding: 11px 17px !important;
   line-height: normal !important;
   /* border-bottom: 3px double #ddd !important; */
@@ -1558,12 +1546,7 @@ ul.social-icons.light li a {
 .frm_style_formidable-style.with_frm_style input[type=number]:hover,
 .frm_style_formidable-style.with_frm_style input[type=tel]:hover,
 .frm_style_formidable-style.with_frm_style input[type=email]:hover,
-.frm_style_formidable-style.with_frm_style textarea:hover,
-.with_frm_style input[type=text]:hover,
-.with_frm_style input[type=number]:hover,
-.with_frm_style input[type=tel]:hover,
-.with_frm_style input[type=email]:hover,
-.with_frm_style textarea:hover {
+.frm_style_formidable-style.with_frm_style textarea:hover {
   border-color: #eee !important;
 }
 .frm_style_formidable-style.with_frm_style input[type=text]:active,
@@ -1575,17 +1558,7 @@ ul.social-icons.light li a {
 .frm_style_formidable-style.with_frm_style input[type=number]:focus,
 .frm_style_formidable-style.with_frm_style input[type=tel]:focus,
 .frm_style_formidable-style.with_frm_style input[type=email]:focus,
-.frm_style_formidable-style.with_frm_style textarea:focus,
-.with_frm_style input[type=text]:active,
-.with_frm_style input[type=number]:active,
-.with_frm_style input[type=tel]:active,
-.with_frm_style input[type=email]:active,
-.with_frm_style textarea:active:focus,
-.with_frm_style input[type=text]:focus,
-.with_frm_style input[type=number]:focus,
-.with_frm_style input[type=tel]:focus,
-.with_frm_style input[type=email]:focus,
-.with_frm_style textarea:focus {
+.frm_style_formidable-style.with_frm_style textarea:focus {
   border-color: #fff !important;
   border-bottom: 1px solid #ddd !important;
   color: #0671b5 !important;

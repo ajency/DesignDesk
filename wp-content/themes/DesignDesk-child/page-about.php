@@ -61,54 +61,92 @@ if ( vp_metabox('background_settings.hb_content_background_color') ){
 						<section id="cd-timeline" class="cd-container">
 							<div class="cd-timeline-block">
 								<div class="cd-timeline-img cd-picture">
-									<i class="fa fa-star"></i>
+									<i class="fa fa-lightbulb-o"></i>
 								</div> <!-- cd-timeline-img -->
 
 								<div class="cd-timeline-content">
-									<h2>Title of section 1</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+									<h2>2005: The beginnings…</h2>
+									<p>JMD DesignDesk Pvt Ltd is formed in Kolkata with an objective to provide 'end to end exhibiting solutions in a professional &amp; organized manner'</p>
 									<a href="#0" class="hb-button hb-small-button">Read more</a>
-									<span class="cd-date">Jan 14</span>
+									<span class="cd-date">
+										<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/kolkata_designdesk1.jpg">
+									</span>
 								</div> <!-- cd-timeline-content -->
 							</div> <!-- cd-timeline-block -->
 
 							<div class="cd-timeline-block">
 								<div class="cd-timeline-img cd-movie">
-									<i class="fa fa-film"></i>
+									<i class="fa fa-line-chart"></i>
 									<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cd-icon-movie.svg" alt="Movie"> -->
 								</div> <!-- cd-timeline-img -->
 
 								<div class="cd-timeline-content">
-									<h2>Title of section 2</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+									<h2>2007: Starting to grow…</h2>
+									<p>Started serving Exhibitions across India & first overseas project in Germany!</p>
 									<a href="#0" class="hb-button hb-small-button">Read more</a>
-									<span class="cd-date">Jan 18</span>
-								</div> <!-- cd-timeline-content -->
-							</div> <!-- cd-timeline-block -->
-
-							<div class="cd-timeline-block">
-								<div class="cd-timeline-img cd-picture">
-									<i class="fa fa-image"></i>
-								</div> <!-- cd-timeline-img -->
-
-								<div class="cd-timeline-content">
-									<h2>Title of section 3</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-									<a href="#0" class="hb-button hb-small-button">Read more</a>
-									<span class="cd-date">Jan 24</span>
+									<span class="cd-date">
+										<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/designdesk_exhibition_design.jpg">
+									</span>
 								</div> <!-- cd-timeline-content -->
 							</div> <!-- cd-timeline-block -->
 
 							<div class="cd-timeline-block">
 								<div class="cd-timeline-img cd-location">
+									<i class="fa fa-bolt"></i>
+								</div> <!-- cd-timeline-img -->
+
+								<div class="cd-timeline-content">
+									<h2>2009: Bold steps…</h2>
+									<p>DesignDesk grows its operations & establishes office in Mumbai – the commercial capital & Exhibition hub of India!</p>
+									<a href="#0" class="hb-button hb-small-button">Read more</a>
+									<span class="cd-date">
+										<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/mumbai_designdesk1.jpg">
+									</span>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img cd-picture">
+									<i class="fa fa-leaf"></i>
+								</div> <!-- cd-timeline-img -->
+
+								<div class="cd-timeline-content">
+									<h2>2010: A fresh look…</h2>
+									<p>A new brand identity is created. Team strength nears 20 professionals!</p>
+									<a href="#0" class="hb-button hb-small-button">Read more</a>
+									<span class="cd-date">
+										<a href="http://www.designdesk.in/wp-content/uploads/2015/06/New-Logo-Concept.pdf" target="_blank"><img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/newlogo.jpg" height="150"></a>
+									</span>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img cd-movie">
 									<i class="fa fa-map-marker"></i>
 								</div> <!-- cd-timeline-img -->
 
 								<div class="cd-timeline-content">
-									<h2>Title of section 4</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+									<h2>2011: Strength to strength…</h2>
+									<p>Our largest &amp; most organised production facility is established in Mumbai</p>
 									<a href="#0" class="hb-button hb-small-button">Read more</a>
-									<span class="cd-date">Feb 14</span>
+									<span class="cd-date">
+										<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/2011.jpg">
+									</span>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img cd-location">
+									<i class="fa fa-globe"></i>
+								</div> <!-- cd-timeline-img -->
+
+								<div class="cd-timeline-content">
+									<h2>2014: Going global…</h2>
+									<p>DesignDesk participates at Euroshop 2014, Germany as Sponsor &amp; Co exhibitor at the IFES Stand.</p>
+									<p>Annual Project count crosses over 100 Stands across India &amp; the World</p>
+									<span class="cd-date">
+										<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/2014.jpg">
+									</span>
 								</div> <!-- cd-timeline-content -->
 							</div> <!-- cd-timeline-block -->
 
@@ -118,22 +156,12 @@ if ( vp_metabox('background_settings.hb_content_background_color') ){
 								</div> <!-- cd-timeline-img -->
 
 								<div class="cd-timeline-content">
-									<h2>Title of section 5</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+									<h2>2015: Setting new Goals…</h2>
+									<p>As we complete 10years, we chalk out an ambitious Strategic Goal &amp; Roadmap for 2018 !</p>
 									<a href="#0" class="hb-button hb-small-button">Read more</a>
-									<span class="cd-date">Feb 18</span>
-								</div> <!-- cd-timeline-content -->
-							</div> <!-- cd-timeline-block -->
-
-							<div class="cd-timeline-block">
-								<div class="cd-timeline-img cd-movie">
-									<i class="fa fa-film"></i>
-								</div> <!-- cd-timeline-img -->
-
-								<div class="cd-timeline-content">
-									<h2>Final Section</h2>
-									<p>This is the content of the last section</p>
-									<span class="cd-date">Feb 26</span>
+									<span class="cd-date">
+										<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/10years.png">
+									</span>
 								</div> <!-- cd-timeline-content -->
 							</div> <!-- cd-timeline-block -->
 						</section> <!-- cd-timeline -->

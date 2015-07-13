@@ -4,8 +4,9 @@
 	//scripts go here.
 	//console.log('script enqueued!');
 	$(document).ready(function() {
+		//why us counts
 		$('.reason3.res4').each(function() {
-			$(this).find('.res3in').find('.vc_col-sm-5').each(function(i) {
+			$(this).find('.res3in').find('.vc_col-sm-6').each(function(i) {
 				console.log(i);
 				$(this).find('.shortcode-wrapper').find('h4').prepend('<span class="mild">0' + (i + 1) + '.</span> ');
 			});
@@ -67,6 +68,26 @@
 		}
 	});
 
+	//Gallery page
+	$(window).load(function() {
+		if ($('body').hasClass('page-template-page-gallery-standard')) {
+			$('#standard-gallery-masonry').find('.standard-gallery-item-wrap').each(function() {
+				$(this).find('.hb-gal-standard-img-wrapper').find('a').attr('rel', 'prettyPhoto[gallery_all]');
+			});
+		}
+	});
+
+
+	$(window).load(function() {
+		//Sorting the ul li - gallery
+		$all_li = [];
+		$('.filter-tabs').find('li').each(function() {
+			$all_li.push($(this).html());
+		});
+		for (var i = 0; i < $all_li.length; i++) {
+			console.log($all_li[i]);
+		}
+	});
 
 
 })(jQuery);

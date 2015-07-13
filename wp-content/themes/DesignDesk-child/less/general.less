@@ -80,6 +80,9 @@
 .main-navigation.third-skin #main-nav > li > a {
 	color: @brand-greydark !important;
 	padding: 0 20px;
+	&.sf-with-ul {
+		pointer-events: none;
+	}
 	@media screen and (min-width: 900px) and (max-width: 1199px) {
 		padding: 0 10px;
 		font-size: 13px;
@@ -268,11 +271,20 @@ ul.social-icons.light li a {background: rgba(0,0,0,0);}
 				padding-bottom: 15px;
 				margin-bottom: 15px;
 				border-bottom: 1px solid #2D2D2D;
+				text-align: center;
 				&:nth-of-type(3), &:nth-of-type(4) {border-bottom: 0; margin-bottom: 0;}
 				.foot-div {clear: both;}
 				br, hr {display: none;}
 				&:nth-of-type(2) hr {display: block;}
-				i {margin-top: 0;}
+				i {
+					margin-top: 0;
+					float: none;
+				  	margin: 0 auto;
+				  	margin-bottom: 10px;
+				  	&.fa-globe {
+				  		margin-top: 25px;
+				  	}
+				}
 			}
 		}
 		.so {
@@ -366,4 +378,15 @@ ul.social-icons.light li a {background: rgba(0,0,0,0);}
 	.shortcode-client-carousel .hb-client-list li {
 		width: 18% !important;
 	}
+}
+
+//royal slider
+.royalSlider {
+	margin: 0 auto;
+}
+.rsDefaultInv .rsThumbsHor {
+	padding-top: 4px;
+}
+.rsDefaultInv .rsArrowIcn {
+	background-image: url(img/rs-default-inverted.png) !important;
 }

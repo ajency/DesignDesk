@@ -110,10 +110,14 @@
     // box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
     i {
       display: block;
-      font-size: 30px;
+      font-size: 18px;
       text-align: center;
-      line-height: 58px;
+      line-height: 42px;
       color: #fff;
+      @media screen and (min-width: 1170px) {
+        font-size: 30px;
+        line-height: 58px;
+      }
     }
   }
   .cd-timeline-img img {
@@ -220,7 +224,7 @@
     border-radius: 0.25em;
     padding: 1em;
     box-shadow: 0 3px 0 #E4E4E4;
-    a {display: none;}
+    a.hb-button {display: none;}
   }
   .cd-timeline-content:after {
     content: "";
@@ -302,6 +306,13 @@
       top: 6px;
       font-size: 16px;
       font-size: 1rem;
+      opacity: 1;
+      img {
+        position: relative;
+        top: -17px;
+        width: auto !important;
+        height: 156px !important;
+      }
     }
     .cd-timeline-block:nth-child(even) .cd-timeline-content {
       float: right;

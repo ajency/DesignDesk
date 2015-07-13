@@ -7,17 +7,34 @@
 		width: 49%;
 	}
 	.frm_form_field.form-field.fl {
-		margin-right: 8px;
+		// margin-right: 8px;
+		float: left;
 	}
 	.frm_form_field.form-field.fr {
-		margin-left: 8px;
+		// margin-left: 8px;
+		float: right;
 	}
+	@media screen and (max-width: 480px) {
+		.frm_form_field.form-field.fr, .frm_form_field.form-field.fl {
+			float: none;
+			clear: both;
+			width: 100%;
+		}
+	}
+}
+.with_frm_style .halvedarea .frm_form_field {
+	clear: none !important;
 }
 .frm_style_formidable-style.with_frm_style input[type=text],
 .frm_style_formidable-style.with_frm_style input[type=number],
 .frm_style_formidable-style.with_frm_style input[type=tel],
 .frm_style_formidable-style.with_frm_style input[type=email],
-.frm_style_formidable-style.with_frm_style textarea {
+.frm_style_formidable-style.with_frm_style textarea,
+.with_frm_style input[type=text],
+.with_frm_style input[type=number],
+.with_frm_style input[type=tel],
+.with_frm_style input[type=email],
+.with_frm_style textarea {
 	padding: 11px 17px !important;
 	line-height: normal !important;
 	/* border-bottom: 3px double #ddd !important; */
@@ -32,7 +49,8 @@
 		color: @brand-primary !important;
 	}
 }
-.frm_style_formidable-style.with_frm_style input[type=submit].hb-button {
+.frm_style_formidable-style.with_frm_style input[type=submit].hb-button,
+.with_frm_style input[type=submit].hb-button {
 	padding: 14px 30px !important;
 	box-shadow: 0 3px 0 0 #007cbd !important;
 	&:hover {
@@ -82,7 +100,7 @@
 			transform: rotateZ(45deg);
 			.transition(all; 0.5s;);
 		}
-		&.current {
+		&.current {position: relative;
 			border-top-color: darken(@brand-primary, 10%);
 			opacity: 1;
 			background-color: @brand-primary;
@@ -97,6 +115,20 @@
 				bottom: -7px;
 				left: 50%;
 				margin-left: -7px;
+			}
+		}
+		@media screen and (max-width: 680px) {
+			opacity: 1;
+			&.current {
+				border-top: 2px solid #EDEDED;
+				background-color: #fafafa;
+				opacity: 1;
+				p {color: darken(@brand-greylight, 20%);}
+				h4 {color: @brand-greydark;}
+				.hb-moon-location {color: @brand-primary;}
+				&:after {
+					display: none;
+				}
 			}
 		}
 		&:hover {
@@ -130,13 +162,18 @@
 				margin-right: 0;
 			}
 		}
+		.to_loca_2 {
+			margin-top: 350px;
+		}
 	}
 	//maps
 	.shortcode-map-embed {
 		position: relative;
 		z-index: 1;
 		// display: none;
-		visibility: hidden;
+		@media screen (min-width: 681px) {
+			visibility: hidden;
+		}
 		&.current {
 			// display: block;
 			visibility: visible;
@@ -144,10 +181,18 @@
 		}
 		&.loca_2 {
 			margin-top: -350px;
+			@media screen and (max-width: 680px) {
+				margin-top: 273px;
+			}
 		}
 		.map-wrapper, .hb-gmap-map {
 			width: 100%;
 			display: block;
+		}
+		@media screen and (max-width: 680px) {
+			&.loca_1 {
+				margin-top: -623px;
+			}
 		}
 	}
 }

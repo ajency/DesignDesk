@@ -83,17 +83,115 @@ if ( basename(get_page_template()) != 'page-presentation-fullwidth.php' ){
 <div id="pre-footer-area">
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
-				<div class="subscribe">
-					<form action="">
-						<input type="text" class="subscribe_input" id="subsc" placeholder="Subscribe to our Newsletter" />
-						<button class="subscribe_submit"><i class="fa fa-arrow-right"></i></button>
-					</form>
-				</div>
+			<div class="col-5">
+					<!-- BEGIN: Signup Form Manual Code from Benchmark Email Ver 2.0 ------>
+
+						<style type="text/css">
+							/*.bmform_outer563202 {
+								width: 100%;
+							}
+							.bmform_inner563202 {
+								border: 1px solid #797a7b;
+							}
+							.bmform_head563202 {
+								background-color: #d0d6d9;
+								height: 37px;
+							}
+							.bm_headetext563202 {
+								color: #000000;
+								font-family: Arial, Helvetica, sans-serif;
+								font-size: 18px;
+								padding: 6px 10px 0 10px;
+								font-weight: bold;
+							}
+							.bmform_body563202 {
+								background-color: #f0f2f3;
+								color: #000000;
+								font-family: Arial, Helvetica, sans-serif;
+								font-size: 12px;
+								padding: 12px;
+							}
+							.bmform_introtxt563202 {
+								font-family: Arial, Helvetica, sans-serif;
+								font-size: 12px;
+								padding-bottom: 12px;
+							}
+							.bmform_frmtext563202 {
+								padding: 5px 0px 3px 0px;
+								display: block;
+								float: none;
+								text-align: left;
+								text-decoration: none;
+								width: auto;
+								font-weight: bold;
+							}
+							.bmform_frm563202 {
+								color: #000000;
+								display: block;
+								float: none;
+								font-family: Verdana, sans-serif;
+								font-size: 14px;
+								font-style: normal;
+								font-weight: normal;
+								text-align: left;
+								text-decoration: none;
+								width: 190px;
+								padding: 3px;
+							}
+							.bmform_button563202 {
+								text-align: center;
+								padding-top: 15px;
+							}
+							.bmform_submit563202 {
+								padding: 3px 12px 3px 12px;
+							}
+							.bmform_footer563202 {}.footer_bdy563202 {}.footer_txt563202 {}#tdLogo563202 img {
+								margin-bottom: 10px;
+								max-width: 230px;
+							}*/
+						</style>
+						<script type="text/javascript">
+							function CheckField563202(fldName, frm){ if ( frm[fldName].length ) { for ( var i = 0, l = frm[fldName].length; i < l; i++ ) {  if ( frm[fldName].type =='select-one' ) { if( frm[fldName][i].selected && i==0 && frm[fldName][i].value == '' ) { return false; }  if ( frm[fldName][i].selected ) { return true; } }  else { if ( frm[fldName][i].checked ) { return true; } }; } return false; } else { if ( frm[fldName].type == "checkbox" ) { return ( frm[fldName].checked ); } else if ( frm[fldName].type == "radio" ) { return ( frm[fldName].checked ); } else { frm[fldName].focus(); return (frm[fldName].value.length > 0); }} }
+							function rmspaces(x) {var leftx = 0;var rightx = x.length -1;while ( x.charAt(leftx) == ' ') { leftx++; }while ( x.charAt(rightx) == ' ') { --rightx; }var q = x.substr(leftx,rightx-leftx + 1);if ( (leftx == x.length) && (rightx == -1) ) { q =''; } return(q); }
+							function checkfield(data) {if (rmspaces(data) == ""){return false;}else {return true;}}
+							function isemail(data) {var flag = false;if (  data.indexOf("@",0)  == -1 || data.indexOf("\\",0)  != -1 ||data.indexOf("/",0)  != -1 ||!checkfield(data) ||  data.indexOf(".",0)  == -1  ||  data.indexOf("@")  == 0 ||data.lastIndexOf(".") < data.lastIndexOf("@") ||data.lastIndexOf(".") == (data.length - 1)   ||data.lastIndexOf("@") !=   data.indexOf("@") ||data.indexOf(",",0)  != -1 ||data.indexOf(":",0)  != -1 ||data.indexOf(";",0)  != -1  ) {return flag;} else {var temp = rmspaces(data);if (temp.indexOf(' ',0) != -1) { flag = true; }var d3 = temp.lastIndexOf('.') + 4;var d4 = temp.substring(0,d3);var e2 = temp.length  -  temp.lastIndexOf('.')  - 1;var i1 = temp.indexOf('@');if (  (temp.charAt(i1+1) == '.') || ( e2 < 1 ) ) { flag = true; }return !flag;}}
+							function CheckFieldD563202(fldH, chkDD, chkMM, chkYY, reqd, frm){ var retVal = true; var dt = validDate563202(chkDD, chkMM, chkYY, frm); var nDate = frm[chkMM].value  + " " + frm[chkDD].value + " " + frm[chkYY].value; if ( dt == null && reqd == 1 ) {	nDate = ""; retVal = false;	} else if ( (frm[chkDD].value != "" || frm[chkMM].value != "" || frm[chkYY].value != "") && dt == null) { retVal = false; nDate = "";} if ( retVal ) {frm[fldH].value = nDate;} return retVal; }
+							function validDate563202(chkDD, chkMM, chkYY, frm) {var objDate = null;	if ( frm[chkDD].value != "" && frm[chkMM].value != "" && frm[chkYY].value != "" ) {var mSeconds = (new Date(frm[chkYY].value - 0, frm[chkMM].selectedIndex - 1, frm[chkDD].value - 0)).getTime();var objDate = new Date();objDate.setTime(mSeconds);if (objDate.getFullYear() != frm[chkYY].value - 0 || objDate.getMonth()  != frm[chkMM].selectedIndex - 1  || objDate.getDate() != frm[chkDD].value - 0){objDate = null;}}return objDate;}
+							function _checkSubmit563202(frm){
+								if ( !isemail(frm["fldEmail"].value) ) {
+									alert("Please enter the Email");
+									return false;
+								}
+								return true; }
+						</script>
+						<div align="center">
+							<form style="display:inline;" action="https://lb.benchmarkemail.com//code/lbform" method=post name="frmLB563202" accept-charset="UTF-8" onsubmit="return _checkSubmit563202(this);" >
+								<input type=hidden name=successurl value="http://www.benchmarkemail.com/Code/ThankYouOptin" />
+								<input type=hidden name=errorurl value="http://lb.benchmarkemail.com//Code/Error" />
+								<input type=hidden name=token value="mFcQnoBFKMQ5AkrPywhUBuZXUawFafLC8HcPNpjW%2Bac1SgsGRzPBIg%3D%3D" />
+								<input type="hidden" name="doubleoptin" value="" />
+								<div class="bmform_outer563202" id="tblFormData563202">
+									<div class="bmform_inner563202">
+										<div class="bmform_head563202" id="tdHeader563202">
+											<div class="bmform_body563202">
+												<div class="subscribe" id="tblFieldData563202" style='text-align:left;'>
+													<input type="text" placeholder="Subscribe to our Newsletter" class="bmform_frm563202 subscribe_input" name="fldEmail" maxlength="100" />
+													<button class="subscribe_submit" type="submit" id="btnSubmit">
+														<i class="fa fa-arrow-right"></i>
+													</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
 			</div>
-			<div class="col-6">
+			<div class="col-7">
 				<div class="right_mem">
-					<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/members_of_IFES_and_EDPA.png" alt="" class="member1 pullright">
+					<!--<img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/members_of_IFES_and_EDPA.png" alt="" class="member1 pullright">-->
+					<a href="http://www.edpa.com" class="member1 pullright" target="_blank"><img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/EDPA-logo.png"></a> &nbsp; <a href="http://www.ifesnet.com" class="member1 pullright" target="_blank"><img src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/img/IFES-logo.png"></a>
 					<span class="membersof pullright">Members of</span>
 					<!-- <img src="" alt="" class="member2 pullright"> -->
 				</div>
